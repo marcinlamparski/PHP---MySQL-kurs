@@ -2,6 +2,7 @@ CREATE TABLE Samochody (
     id_samochodu INT AUTO_INCREMENT PRIMARY KEY,
     marka VARCHAR(50) NOT NULL,
     model VARCHAR(50) NOT NULL,
+    przebieg INT,
     nr_rejestracyjny VARCHAR(15) NOT NULL
 );
 
@@ -24,15 +25,15 @@ CREATE TABLE Zlecenia (
 
 
 -- Tabela Samochody
-INSERT INTO Samochody (marka, model, nr_rejestracyjny) VALUES
-  ('Toyota', 'Corolla', 'WZ 2347L'),
-  ('Volkswagen', 'Golf', 'KR 6536H'),
-  ('Fiat', 'Ducato', 'PO 9854S'),
-  ('Renault', 'Kangoo', 'WA 2124P'),
-  ('Peugeot', 'Partner', 'GD 5643T'),
-  ('Opel', 'Vivaro', 'LU 3453C'),
-  ('Ford', 'Transit', 'SC 9812J'),
-  ('Mercedes', 'Sprinter', 'DW 6721M');
+INSERT INTO Samochody (marka, model, przebieg, nr_rejestracyjny) VALUES
+  ('Toyota', 'Corolla', '120000', 'WZ 2347L'),
+  ('Volkswagen', 'Golf', '88000', 'KR 6536H'),
+  ('Fiat', 'Ducato', '60000', 'PO 9854S'),
+  ('Renault', 'Kangoo', '180000', 'WA 2124P'),
+  ('Peugeot', 'Partner', '240000', 'GD 5643T'),
+  ('Opel', 'Vivaro', '6000', 'LU 3453C'),
+  ('Ford', 'Transit','300000', 'SC 9812J'),
+  ('Mercedes', 'Sprinter','2000', 'DW 6721M');
 
 -- Tabela Kierowcy
 INSERT INTO Kierowcy (imie, nazwisko, pesel) VALUES
