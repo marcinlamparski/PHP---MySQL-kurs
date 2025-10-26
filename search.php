@@ -2,7 +2,7 @@
 $conn = mysqli_connect('localhost', 'root', '', 'kurier');
 if (!$conn) die('Błąd połączenia z bazą');
 
-$search = isset($_POST['search_term']) ? trim($_POST['search_term']) : '';
+$search = isset($_POST['search_term']);
 if ($search !== '') {
   // Wyszukiwanie po marce LUB modelu samochodu 
   $sql = "SELECT * FROM Samochody WHERE marka LIKE '%$search%' OR model LIKE '%$search%'";
