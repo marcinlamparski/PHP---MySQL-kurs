@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ćwiczenia JS i PHP</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    .msg { margin: 10px 0; padding: 10px; background: #eef; color: #006; }
+    .highlight { background: yellow; }
+    .opis { background: #f9f9f9; padding: 14px; margin-bottom: 18px; border-radius: 6px; }
+    table { border-collapse: collapse; margin-top: 18px; width: 100%; }
+    th, td { border: 1px solid #777; padding: 8px 12px; text-align: center; }
+    th { background: #a6c1ee; }
+  </style>
+</head>
+<body>
+  <h1>Prosta strona do ćwiczeń JS i PHP</h1>
+  <h2>Podstawowe operacje na formularzach, zdarzeniach i danych</h2>
+  
+  <div class="opis">
+    Ta strona służy do nauki i eksperymentów z JavaScript oraz podstawową obsługą formularzy.  
+    Skorzystaj z dostępnych przycisków i formularza poniżej, aby poznać najczęstsze techniki programistyczne.  
+    Ucz się, jak dynamicznie tworzyć treści i zmieniać wygląd elementów strony bez przeładowywania witryny.
+  </div>
+  
+  <div>
+    Pracując z tym szablonem możesz przetestować:
+    <ul>
+      <li>Obsługę zdarzeń kliknięcia i wysyłania formularza</li>
+      <li>Modyfikowanie i odczyt styli CSS za pomocą JS</li>
+      <li>Wstawianie nowych fragmentów HTML do wybranych elementów</li>
+    </ul>
+  </div>
+
+  <form id="testForm" method="POST" action="process.php">
+    <label>Imię: <input type="text" name="imie" id="imie"></label><br>
+    <label>Email: <input type="email" name="email" id="email"></label><br>
+    <label>Ulubiony kolor:
+      <select name="color" id="color">
+        <option value="red">Czerwony</option>
+        <option value="green">Zielony</option>
+        <option value="blue">Niebieski</option>
+        <option value="yellow">Żółty</option>
+      </select>
+    </label><br>
+    <button type="submit" id="btnSend">Wyślij</button>
+  </form>
+  <form id="searchForm" method="POST" action="search.php">
+  <label>Wyszukaj samochód po marce/modelu:
+    <input type="text" name="search_term" id="search_term">
+  </label>
+  <button type="submit">Szukaj</button>
+</form>
+<div id="search_output" class="msg"></div>
+
+  
+  <div id="output" class="msg"></div>
+  
+  <button id="injectBtn">Wstrzyknij HTML</button>
+  <button id="cssBtn">Zmiana CSS</button>
+  
+  <div class="opis">
+    Poniżej znajduje się przykładowa tabela z danymi, na których można testować stylowanie oraz dynamiczne zmiany zawartości:
+  </div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Imię</th>
+        <th>Email</th>
+        <th>Kraj</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Alicja</td>
+        <td>alicja@przyklad.pl</td>
+        <td>Polska</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bartosz</td>
+        <td>bartosz@przyklad.pl</td>
+        <td>Niemcy</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Cecylia</td>
+        <td>cecylia@przyklad.pl</td>
+        <td>Francja</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Dawid</td>
+        <td>dawid@przyklad.pl</td>
+        <td>Włochy</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
