@@ -1,0 +1,163 @@
+# 3.1 Formularze HTML i metody GET/POST
+
+## 📚 Teoria
+
+Formularz HTML to sposób na zbieranie danych od użytkownika. W PHP używamy:
+- **GET** — dane widoczne w URL, dla małych ilości danych
+- **POST** — dane ukryte, dla większych ilości i danych wrażliwych
+
+## 🎯 Formularz HTML — GET
+
+```html
+<form method="GET" action="obliczeń.php">
+  <label>Imię: <input type="text" name="imie"></label><br>
+  <button type="submit">Wyślij</button>
+</form>
+```
+
+Dane wysyłane w URL: `http://localhost/obliczeń.php?imie=Piotr`
+
+W PHP pobierz:
+```php
+$imie = $_GET['imie'];  // Piotr
+```
+
+## 🎯 Formularz HTML — POST
+
+```html
+<form method="POST" action="obliczeń.php">
+  <label>Imię: <input type="text" name="imie"></label><br>
+  <button type="submit">Wyślij</button>
+</form>
+```
+
+Dane wysyłane w tle, dane ukryte w URL.
+
+W PHP pobierz:
+```php
+$imie = $_POST['imie'];  // Piotr
+```
+
+## 📝 Różnice GET i POST
+
+| Cecha | GET | POST |
+|-------|-----|------|
+| **Dane w URL** | Widoczne | Ukryte |
+| **Rozmiar** | do ~2000 znaków | Większy |
+| **Bezpieczeństwo** | Mniejsze | Większe |
+| **Zakładki** | Można podzielić się URL | Nie można |
+| **Do czego** | Wyszukiwanie, filtry | Formularze, dane wrażliwe |
+
+## 🎯 Praktyka
+
+### Ćwiczenie 3.1.1: Prosty formularz GET
+
+1. Utwórz plik `formularz_get.php`:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formularz GET</title>
+</head>
+<body>
+
+<h2>Przeszukaj samochody</h2>
+
+<form method="GET" action="szukaj.php">
+  <label>Szukana marka: 
+    <input type="text" name="marka">
+  </label>
+  <button type="submit">Szukaj</button>
+</form>
+
+</body>
+</html>
+```
+
+2. Utwórz plik `szukaj.php`:
+
+```php
+<?php
+  require 'config.php';
+  
+  if (isset($_GET['marka'])) {
+      $marka = $_GET['marka'];
+      
+      $sql = "SELECT * FROM Samochody WHERE marka LIKE '%$marka%'";
+      $result = mysqli_query($conn, $sql);
+      
+      echo "<h2>Wyniki dla: " . $marka . "</h2>";
+      
+      if (mysqli_num_rows($result) > 0) {
+          echo "<table border='1' cellpadding='10'>";
+          echo "<tr><th>Marka</th><th>Model</th></tr>";
+          
+          while ($row = mysqli_fetch_assoc($result)) {
+              echo "<tr>";
+              echo "<td>" . $row['marka'] . "</td>";
+              echo "<td>" . $row['model'] . "</td>";
+              echo "</tr>";
+          }
+          echo "</table>";
+      } else {
+          echo "Nie znaleziono.";
+      }
+  }
+  
+  mysqli_close($conn);
+?>
+```
+
+### Ćwiczenie 3.1.2: Formularz POST
+
+1. Utwórz plik `dodaj_kierowce.php`:
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Dodaj nowego kierowcę</h2>
+
+<form method="POST" action="przetwórz_kierowce.php">
+  <label>Imię: <input type="text" name="imie"></label><br>
+  <label>Nazwisko: <input type="text" name="nazwisko"></label><br>
+  <label>PESEL: <input type="text" name="pesel"></label><br>
+  <button type="submit">Dodaj</button>
+</form>
+
+</body>
+</html>
+```
+
+2. Utwórz plik `przetwórz_kierowce.php`:
+
+```php
+<?php
+  require 'config.php';
+  
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+      $imie = $_POST['imie'];
+      $nazwisko = $_POST['nazwisko'];
+      $pesel = $_POST['pesel'];
+      
+      echo "Otrzymałem:<br>";
+      echo "Imię: " . $imie . "<br>";
+      echo "Nazwisko: " . $nazwisko . "<br>";
+      echo "PESEL: " . $pesel . "<br>";
+  }
+  
+  mysqli_close($conn);
+?>
+```
+
+## 📝 Podsumowanie
+
+W tej lekcji nauczyłeś się:
+- ✅ Różnic między GET i POST
+- ✅ Tworzenia formularzy HTML
+- ✅ Pobierania danych z $_GET i $_POST
+- ✅ Sprawdzania czy formularz został wysłany
+
+**Przejdź do 3.2 aby nauczyć się bardziej zaawansowanej pracy z danymi!**
