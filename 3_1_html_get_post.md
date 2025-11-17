@@ -51,7 +51,8 @@ $imie = $_POST['imie'];  // Piotr
 ## 🎯 Praktyka
 
 ### Ćwiczenie 3.1.1: Prosty formularz GET
-## Utwórz oba poniższe pliki, połącz się z bazą i sprawdź czy GET działa!
+# Utwórz oba poniższe pliki, połącz się z bazą i sprawdź czy GET działa!
+# Zamień metodę GET na POST - co się zmieniło?
 
 1. Utwórz plik `formularz_get.php`:
 
@@ -111,7 +112,7 @@ $imie = $_POST['imie'];  // Piotr
 ```
 
 ### Ćwiczenie 3.1.2: Formularz POST
-
+# Utwórz oba poniższe pliki, połącz się z bazą i sprawdź czy POST działa!
 1. Utwórz plik `dodaj_kierowce.php`:
 
 ```html
