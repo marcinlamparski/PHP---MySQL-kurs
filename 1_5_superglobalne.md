@@ -284,6 +284,7 @@ Sesje przechowują dane na serwerze dla każdego użytkownika.
   }
 ?>
 ```
+htmlspecialchars() to funkcja w języku PHP, która zamienia specjalne znaki HTML na ich odpowiedniki HTML, co chroni przed atakami typu Cross-Site Scripting (XSS). Dzięki tej funkcji, dane wprowadzane przez użytkownika (np. w formularzach) są wyświetlane jako dosłowny tekst, a nie jako wykonywalny kod
 
 ## 📝 Ćwiczenia praktyczne
 
@@ -302,6 +303,7 @@ Utwórz plik `metoda.php`:
   }
 ?>
 ```
+$_SERVER['REQUEST_METHOD'] to odwołanie do tablicy globalnej $_SERVER której klucz ['REQUEST_METHOD'] który przechowuje metodę żądania HTTP (np. GET lub POST) używaną do załadowania bieżącego skryptu
 
 ### Ćwiczenie 1.5.5: isset() vs empty()
 
