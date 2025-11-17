@@ -161,7 +161,7 @@ Przykładowo, $_SERVER['REQUEST_METHOD'] zwraca metodę HTTP, jaką wysłano do 
 - REMOTE_ADDR – adres IP użytkownika,
 - REQUEST_URI – żądany URI (adres strony).
 
-Ta tablica jest tworzona przez serwer WWW i jej zawartość może się różnić w zależności od konfiguracji serwera i środowiska, w którym działa skrypt PHP. $_SERVER jest bardzo przydatna do zbierania meta-danych o żądaniu i środowisku, które pozwalają na dynamiczne reagowanie na różne sytuacje w aplikacji webowej.[1][2][4][5]
+Ta tablica jest tworzona przez serwer WWW i jej zawartość może się różnić w zależności od konfiguracji serwera i środowiska, w którym działa skrypt PHP. $_SERVER jest bardzo przydatna do zbierania meta-danych o żądaniu i środowisku, które pozwalają na dynamiczne reagowanie na różne sytuacje w aplikacji webowej.[1][2]
 
 [1](https://kursphp.com/zmienne-superglobalne/)
 [2](https://www.php.net/manual/en/language.variables.superglobals.php)
