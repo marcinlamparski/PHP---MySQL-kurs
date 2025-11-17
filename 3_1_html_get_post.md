@@ -51,6 +51,7 @@ $imie = $_POST['imie'];  // Piotr
 ## 🎯 Praktyka
 
 ### Ćwiczenie 3.1.1: Prosty formularz GET
+## Utwórz oba poniższe pliki, połącz się z bazą i sprawdź czy GET działa!
 
 1. Utwórz plik `formularz_get.php`:
 
