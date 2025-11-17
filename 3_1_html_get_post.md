@@ -153,6 +153,18 @@ Utwórz oba poniższe pliki, połącz się z bazą i sprawdź czy POST działa!
   mysqli_close($conn);
 ?>
 ```
+Tablica superglobalna $_SERVER w PHP to specjalna tablica asocjacyjna, która zawiera informacje o środowisku serwera oraz szczegóły dotyczące bieżącego żądania HTTP. Jest dostępna w każdym kontekście skryptu bez konieczności wcześniejszego definiowania i przechowuje klucze z takimi danymi jak typ metody żądania (np. GET, POST), adresy IP, ścieżki do wykonywanych skryptów, nagłówki HTTP, dane o przeglądarce użytkownika czy adres URL wywołanego skryptu.
+
+Przykładowo, $_SERVER['REQUEST_METHOD'] zwraca metodę HTTP, jaką wysłano do serwera (np. "POST" lub "GET"), co pozwala na warunkowe wykonywanie kodu w zależności od typu zapytania. Inne popularne klucze to:
+- SERVER_NAME – nazwa serwera,
+- HTTP_USER_AGENT – informacje o przeglądarce klienta,
+- REMOTE_ADDR – adres IP użytkownika,
+- REQUEST_URI – żądany URI (adres strony).
+
+Ta tablica jest tworzona przez serwer WWW i jej zawartość może się różnić w zależności od konfiguracji serwera i środowiska, w którym działa skrypt PHP. $_SERVER jest bardzo przydatna do zbierania meta-danych o żądaniu i środowisku, które pozwalają na dynamiczne reagowanie na różne sytuacje w aplikacji webowej.[1][2][4][5]
+
+[1](https://kursphp.com/zmienne-superglobalne/)
+[2](https://www.php.net/manual/en/language.variables.superglobals.php)
 
 ## 📝 Podsumowanie
 
