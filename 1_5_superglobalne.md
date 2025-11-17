@@ -63,7 +63,7 @@ http://localhost/szukaj.php?marka=Toyota&model=Corolla
 ?>
 ```
 
-2. Wejdź na: `http://localhost/test_get.php?imie=Piotr&wiek=25`
+2. Natępnie wejdź na: `http://localhost/[twój_katalog]/test_get.php?imie=Piotr&wiek=25`
 
 ### 2️⃣ $_POST — Dane z formularza
 
