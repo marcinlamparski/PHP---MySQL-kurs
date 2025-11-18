@@ -361,3 +361,4 @@ W tej lekcji nauczyłeś się:
 W module 3 (Formularze) będziesz intensywnie pracować z `$_GET` i `$_POST`. Teraz masz solidną wiedzę na temat superglobali!
 
 **Przejdź do Modułu 2: Łączenie PHP z MySQL!**
+miejsce na wysłanie plików klIV: https://www.dropbox.com/request/8In6E8lZ74lqmdBYgbPu
