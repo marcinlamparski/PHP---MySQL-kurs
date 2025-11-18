@@ -103,7 +103,7 @@ W tej lekcji nauczyłeś się:
 
 ## 🎯 Zadanie praktyczne do samodzielnego wykonania
 
-### Projekt 3.2.1: Rejestracja kierowcy — Formularz + Wynik
+### Projekt 3.2.2: Rejestracja kierowcy — Formularz + Wynik
 
 **Cel**: Utwórz aplikację, która:
 1. Wyświetla formularz rejestracji kierowcy
