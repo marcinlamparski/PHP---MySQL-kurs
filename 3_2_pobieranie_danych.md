@@ -92,14 +92,17 @@ Przed przetworzeniem danych z formularza musimy:
 ?>
 ```
 UWAGA linia:
-$imie = isset($_POST['imie']) ? trim($_POST['imie']) : ''; to to samo co:
-<?php
+$imie = isset($_POST['imie']) ? trim($_POST['imie']) : ''; 
+to to samo co:
+
+```<?php
 if (isset($_POST['imie'])) {
     $imie = trim($_POST['imie']);
 } else {
     $imie = '';
 }
 ?>
+```
 3. Wejdź na `http://localhost/formularz_obliczeń.html`
 
 ## 📝 Podsumowanie
