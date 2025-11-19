@@ -80,6 +80,7 @@ if (strpos($tekst, '@') !== false) {
 }
 ?>
 ```
+Funkcja strpos() zwraca pozycję pierwszego wystąpienia podciągu (w tym przypadku znaku @) w ciągu tekstowym. Jeśli znak nie zostanie znaleziony, funkcja zwraca false. Ważne jest, aby użyć operatora identyczności (===), ponieważ znak @ może pojawić się na pozycji 0 (na początku tekstu), a wtedy zwykły operator porównania == mógłby błędnie zwrócić false.
 
 ## 🎯 Praktyka
 
