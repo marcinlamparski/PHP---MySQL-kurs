@@ -68,6 +68,19 @@ Powinna sprawdzać:
 ?>
 ```
 
+### 4. Sprawdzenie czy zawiera określony znak
+
+```php
+<?php
+$tekst = "przykład@adres.pl";
+if (strpos($tekst, '@') !== false) {
+    echo "Tekst zawiera znak @";
+} else {
+    echo "Tekst nie zawiera znaku @";
+}
+?>
+```
+
 ## 🎯 Praktyka
 
 ### Ćwiczenie 3.3.1: Walidacja formularza kierowcy
