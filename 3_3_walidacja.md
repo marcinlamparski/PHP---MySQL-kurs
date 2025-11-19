@@ -73,12 +73,12 @@ Powinna sprawdzać:
 ```php
 <?php
 
-$wiek = trim($_POST['wiek]);
+$mail = trim($_POST['mail']);
 
-if (strpos($tekst, '@') !== false) {
-    echo "Tekst zawiera znak @";
+if (strpos($mail, '@') !== false) {
+    echo "Adres email zawiera znak @";
 } else {
-    echo "Tekst nie zawiera znaku @";
+    echo "Adres email nie zawiera znaku @";
 }
 ?>
 ```
