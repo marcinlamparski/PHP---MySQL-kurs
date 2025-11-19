@@ -175,4 +175,5 @@ W tej lekcji nauczyłeś się:
 - ✅ Sprawdzania czy formularz został wysłany
 
 **Przejdź do 3.2 aby nauczyć się bardziej zaawansowanej pracy z danymi!**
-## link do wysłania zadań: https://www.dropbox.com/request/cfG3R9wNnNkysRWIn3C7
+## link do wysłania zadań kl V : https://www.dropbox.com/request/cfG3R9wNnNkysRWIn3C7
+## link do wysłania zadań kl IV : https://www.dropbox.com/request/VPTFuHSnKUPuxFFbw5fr
