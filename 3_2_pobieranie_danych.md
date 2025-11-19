@@ -92,7 +92,8 @@ Przed przetworzeniem danych z formularza musimy:
 ?>
 ```
 UWAGA linia:
-<?php $imie = isset($_POST['imie']) ? trim($_POST['imie']) : ''; to to samo co:
+$imie = isset($_POST['imie']) ? trim($_POST['imie']) : ''; to to samo co:
+<?php
 if (isset($_POST['imie'])) {
     $imie = trim($_POST['imie']);
 } else {
