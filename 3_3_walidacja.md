@@ -75,7 +75,6 @@ Powinna sprawdzać:
 
 $wiek = trim($_POST['wiek]);
 
-$tekst = "przykład@adres.pl";
 if (strpos($tekst, '@') !== false) {
     echo "Tekst zawiera znak @";
 } else {
