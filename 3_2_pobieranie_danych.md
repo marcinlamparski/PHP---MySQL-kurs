@@ -198,3 +198,4 @@ Twoje dane rejestracyjne:
 ---
 
 **Przejdź do 3.3 aby nauczyć się walidacji danych!**
+Miejsce do wysłania zadań z modułu 3 kl IV: https://www.dropbox.com/request/b7tDoz5gamOvYBt5f2HP
