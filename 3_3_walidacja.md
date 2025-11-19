@@ -68,7 +68,7 @@ Powinna sprawdzać:
 ?>
 ```
 
-### 4. Sprawdzenie czy zawiera określony znak
+### 5. Sprawdzenie czy zawiera określony znak
 
 ```php
 <?php
