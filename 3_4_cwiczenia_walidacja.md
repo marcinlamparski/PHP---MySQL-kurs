@@ -23,9 +23,8 @@ Waliduj hasło które:
 
 ### Ćwiczenie 3.4.3: Walidacja daty
 
-Waliduj datę, która powinna być:
+Waliduj datę, (YYYY-MM-DD) która powinna być:
 - Nie pusta
-- W formacie `YYYY-MM-DD`
 - Winna być datą przyszłą
 
 **Wskazówka**: Użyj `strtotime()` do konwersji daty
