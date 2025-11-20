@@ -78,6 +78,15 @@ INSERT INTO tabela (kolumna1, kolumna2) VALUES (wartość1, wartość2);
 ?>
 ```
 
+Ćwiczenie 3.5.2: Dodaj nowego kierowcę do bazy
+
+- Stwórz formularz który pobierze dane kierowcy
+- Wykonaj walidację: imie <30 znaków, nazwisko <40 znaków, pesel musi być numeryczny o zawierać dokładnie 11 znaków,
+- Zapisz dane do baz
+- Zadbaj o obsługę błędów
+
+  
+
 ## 📝 Podsumowanie
 
 W tej lekcji nauczyłeś się:
