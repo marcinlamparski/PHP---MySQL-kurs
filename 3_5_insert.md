@@ -86,3 +86,7 @@ W tej lekcji nauczyłeś się:
 - ✅ Obsługi błędów INSERT
 
 **Przejdź do 3.6 aby nauczyć się komunikatów dla użytkownika!**
+
+Miejsce do wysłania zadań z modułu 3 kl IV: https://www.dropbox.com/request/b7tDoz5gamOvYBt5f2HP
+
+Miejsce do wysłania zadań z modułu 3 kl V: https://www.dropbox.com/request/D1GY3AWftFu6JaQNf8qe
