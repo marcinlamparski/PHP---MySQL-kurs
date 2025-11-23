@@ -341,7 +341,7 @@ Wejdź na:
 | Cecha | GET | POST |
 |-------|-----|------|
 | **Widoczność** | ✅ W URL | ✅ Ukryte |
-| **Rozmiar** | Do ~2000 znaków | Nieograniczony |
+| **Rozmiar** | Do 2048 znaków | Nieograniczony |
 | **Bezpieczeństwo** | Mniejsze | Większe |
 | **Historia** | Zapisywana | Nie |
 | **Używamy do** | Filtrów, wyszukiwania | Formularzy, danych wrażliwych |
