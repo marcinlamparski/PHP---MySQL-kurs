@@ -5,7 +5,7 @@
 Stwórz pełną aplikację do zarządzania kierowcami (Create, Read, Update, Delete).
 
 ## 🎯 Struktura projektu
-### Pracujemy na bazie firm z pliku [Baza Firma]([Baza_utworzenie.sql](https://github.com/marcinlamparski/PHP---MySQL-kurs/blob/3aeed10618c058d04aa939a44fb137dc262e1520/Baza_utworzenie.sql))
+### Pracujemy na bazie firm z pliku [Baza Firma](https://github.com/marcinlamparski/PHP---MySQL-kurs/blob/3aeed10618c058d04aa939a44fb137dc262e1520/Baza_utworzenie.sql)
 
 
 Potrzebujesz 4 pliki:
