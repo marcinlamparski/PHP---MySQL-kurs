@@ -5,7 +5,7 @@
 Stwórz pełną aplikację do zarządzania kierowcami (Create, Read, Update, Delete).
 
 ## 🎯 Struktura projektu
-### Pracujemy na bazie firm z pliku 
+### Pracujemy na bazie firm z pliku Baza_utworzenie.sql
 
 Potrzebujesz 4 pliki:
 1. **lista.php** — wyświetla wszystkich kierowców
