@@ -82,11 +82,12 @@ Potrzebujesz 4 pliki:
 ?>
 ```
 
-##Pomoc!
-##Jak stworzyć link który zawiera część php (zmienną):
+## Pomoc!
+## Jak stworzyć link który zawiera część php (zmienną):
 
 ```php
 echo "<a href='edytuj.php?id=" . $row['id_kierowcy'] . "'>Edytuj</a> | ";
+echo "<a href='usun.php?id=" . $row['id_kierowcy'] . "'>Usuń</a>";
 ```
 
 Pozostałe pliki (edytuj.php, usun.php) tworzysz analogicznie!
